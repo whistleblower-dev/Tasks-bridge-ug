@@ -1,0 +1,116 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#102a43">
+  <title>TaskBridge UG</title>
+  <style>
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f1f5f9;
+      color: #102a43;
+    }
+    header {
+      background: #102a43;
+      color: white;
+      padding: 22px 18px;
+    }
+    header p { color: #cbd5e1; }
+    main {
+      max-width: 650px;
+      margin: auto;
+      padding: 18px;
+    }
+    .card {
+      background: white;
+      padding: 18px;
+      border-radius: 14px;
+      margin-bottom: 14px;
+      box-shadow: 0 2px 8px #102a4310;
+    }
+    .balance {
+      background: #dbeafe;
+      padding: 18px;
+      border-radius: 12px;
+    }
+    button {
+      background: #087e8b;
+      color: white;
+      border: 0;
+      border-radius: 9px;
+      padding: 12px 16px;
+      font-size: 15px;
+      cursor: pointer;
+    }
+    .tag { color: #087e8b; font-weight: bold; }
+    footer {
+      text-align: center;
+      padding: 20px;
+      color: #64748b;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>TaskBridge UG</h1>
+    <p>Real tasks. Fair rewards. Local opportunities.</p>
+  </header>
+
+  <main>
+    <section class="balance">
+      <p>Demo wallet balance</p>
+      <h2 id="balance">UGX 0</h2>
+      <small>Demo only — no real money is stored.</small>
+    </section>
+
+    <h2>Explore opportunities</h2>
+
+    <section class="card">
+      <span class="tag">MICRO TASKS</span>
+      <h3>Sample research task</h3>
+      <p>Help a business understand customer preferences.</p>
+      <p>Reward: To be confirmed</p>
+      <button onclick="showInfo()">
+        View task
+      </button>
+    </section>
+
+    <section class="card">
+      <span class="tag">CONTENT WORK</span>
+      <h3>Writing and digital services</h3>
+      <p>Explore writing, editing and other client projects.</p>
+      <button onclick="showInfo()">
+        Explore work
+      </button>
+    </section>
+
+    <section class="card">
+      <span class="tag">REFERRALS</span>
+      <h3>Invite friends</h3>
+      <p>Referral rewards will only be offered when funded
+         by a sustainable business revenue source.</p>
+      <button onclick="showInfo()">
+        Learn more
+      </button>
+    </section>
+
+    <footer>
+      TaskBridge UG · Early prototype
+    </footer>
+  </main>
+
+  <script>
+    function showInfo() {
+      alert(
+        "This feature is being developed. " +
+        "No payment or reward has been issued."
+      );
+    }
+  </script>
+</body>
+</html>
